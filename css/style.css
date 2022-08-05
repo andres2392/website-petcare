@@ -84,6 +84,10 @@
     line-height: 1.2;
     color: var(--balck-90);
   }
+  h3{
+   font-size: 20px;
+   font-weight: 500; 
+  }
 
   a{
     text-decoration: none;
@@ -94,7 +98,9 @@
     max-width: 100%;
     vertical-align: middle;
   }
-
+  ul{
+    list-style: none;
+  }
   ::selection{
     color: white;
     background-color: var(--main-color);
@@ -116,6 +122,32 @@
     grid-gap: 30px;
   }
   /* 07. = section */
+
+  .section-padding{
+    padding: 60px 0;
+  }
+
+  .section-title{
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .section-title .title{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--main-color);
+    margin: 0 0 8px;
+  }
+
+  .section-title .sub-title{
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--black-70);
+    text-transform: capitalize;
+    line-height: 1.2;
+  }
+
   /* 08. = buttons */
 
    .btn{
@@ -276,7 +308,81 @@
   }
 
   /* 16. = about section */
+
+  .about {
+    overflow: hidden;
+  }
+
+  .about-img,
+  .about-text{
+    grid-column: span 6;
+  }
+
+  .about-img .fancy-br-box::before{
+    border-color: var(--light-yellow);
+  }
+
+.about-img .icon-box{
+  position: absolute;
+  left: -60px;
+  bottom: -30px;
+  animation: moveX 4s linear infinite;
+}
+
+  .about-img .icon-box img{
+    width: 100px;
+  }
+
+  .about-text h3{
+    margin: 15px 0;
+  }
+
+  .about-text ul li{
+    margin-bottom: 6px;
+    position: relative;
+    padding-left: 30px;
+  }
+
+  .about-text ul i{
+    color: var(--main-color);
+    position: absolute;
+    left: 0;
+    top: 5px;
+  }
+
   /* 17. = services section */
+
+  .service-item{
+    grid-column: span 6;
+    background-color: var(--white-alpha-40);
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    box-shadow: 0 0 10px var(--shadow-color);
+  }
+
+  .service-item .img-box {
+    width: 120px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid var(--border-color-1);
+    padding: 8px;
+  }
+
+  .service-item .img-box img {
+    border-radius: 20px;
+  }
+  
+  .service-item .text{
+    padding-left: 30px;
+  }
+
+  .service-item h3 {
+    text-transform: capitalize;
+    margin: 0 0 15px;
+  }
+
   /* 18. = fun fact section */
   /* 19. = pricing section */
   /* 20. = contact section */
